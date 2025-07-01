@@ -1,101 +1,169 @@
-import Image from "next/image";
+'use client'
+import Image from 'next/image'
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
+    <div className="">
+      <div
+        onClick={() => alert('이동')}
+        className="z-10 cursor-pointer absolute top-[10%] right-0 bg-black text-white font-semibold text-4xl p-10 rounded-tl-[60px] rounded-bl-[60px]"
+      >
+        SHOP
+      </div>
+      <div className="w-full overflow-hidden">
+        <video
+          src="images/movie_pc.mp4"
+          muted
+          loop
+          width="100%"
+          autoPlay
+        ></video>
+      </div>
+      {/* whoweqre */}
+      <div className="">
+        <ul className="list-none w-[75%] mx-auto">
+          <li className="about_pb2 relative flex pt-32 gap-2 items-center">
+            <div className="relative w-3 h-12">
+              <Image alt="" src={`/images/title_bar.png`} fill />
+            </div>
+            <span className="text-7xl font-bold">WHO WE ARE</span>
           </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <li className="text-2xl mt-10 line leading-9">
+            <span className="text-amber-800 font-bold">
+              리움랩스(RIUM LABS)
+            </span>{' '}
+            당신의 일상공간에
+            <br />
+            실용적인 디자인과 기능적 가치를 더하는 “생활용품 전문 제조&amp;유통
+            기업”입니다.
+            <br />
+            제품의 시작부터 고객에게 전달되는 마지막 순간까지 모든 과정을 직접
+            <br />
+            직접 제조, 직접 생산, 직접공급을 통해 가격의 거품을 빼고,
+            <br />
+            삶의 효율과 감성을 동시에 담은 제품을 연구하고 제안합니다.
+          </li>
+        </ul>
+      </div>
+      {/* 리움랩스의 one stop solution */}
+      <div
+        id="about_img"
+        className="my-40  rounded-[30px] w-[70%] mx-auto border border-amber-600 px-10 py-16"
+      >
+        <ul className="text-center text-3xl font-bold text-amber-800 pb-6">
+          리움랩스의 One Stop Solution
+        </ul>
+        <ul className="flex w-[90%] mx-auto items-center gap-3 justify-center">
+          <li className="relative w-[23%] aspect-[4/4]">
             <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+              fill
+              className="object-contain"
+              alt=""
+              src="/images/about_01.png"
             />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+          </li>
+          <li className="relative w-[21px] h-[20px]">
+            <Image fill alt="" src="/images/about_00.png" />
+          </li>
+          <li className="relative w-[23%] aspect-[4/4]">
+            <Image
+              fill
+              className="object-contain"
+              alt=""
+              src="/images/about_02.png"
+            />
+          </li>
+          <li className="relative w-[21px] h-[20px]">
+            <Image fill alt="" src="/images/about_00.png" />
+          </li>
+          <li className="relative w-[23%] aspect-[4/4]">
+            <Image
+              fill
+              className="object-contain"
+              alt=""
+              src="/images/about_03.png"
+            />
+          </li>
+          <li className="relative w-[21px] h-[20px]">
+            <Image fill alt="" src="/images/about_00.png" />
+          </li>
+          <li className="relative w-[23%] aspect-[4/4]">
+            <Image
+              fill
+              className="object-contain"
+              alt=""
+              src="/images/about_04.png"
+            />
+          </li>
+        </ul>
+      </div>
+      {/* out story */}
+      <div className="py-32 bg-[url('/images/story_bg.jpg')] bg-no-repeat bg-center bg-cover">
+        <ul className="list-none w-[75%] mx-auto">
+          <li className="about_pb2 relative flex pt-32 gap-2 items-center">
+            <div className="relative w-3 h-12">
+              <Image alt="" src={`/images/title_bar.png`} fill />
+            </div>
+            <span className="text-7xl font-bold">OUR STORY</span>
+          </li>
+          <li className="text-2xl mt-10 line leading-9">
+            <span className="text-amber-800 font-bold">
+              리움랩스(RIUM LABS)
+            </span>
+            는 공간의 개념을 확장한 RIUM과 지속적인 연구개발의 LABS의 합성어로
+            <br />
+            공간을 더욱 편리하고 아름답게 변화하는 경험을 만들어 가겠습니다.
+            <br />
+          </li>
+        </ul>
+        <div className="relative w-[85%] aspect-[4/1] mx-auto my-20">
+          <Image
+            fill
+            className="object-contain"
+            alt=""
+            src={`/images/story_img.png`}
+          />
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+      </div>
+      {/* our value */}
+      <div className="py-32 ">
+        <ul className="list-none w-[75%] mx-auto">
+          <li className="about_pb2 relative flex pt-32 gap-2 items-center">
+            <div className="relative w-3 h-12">
+              <Image alt="" src={`/images/title_bar.png`} fill />
+            </div>
+            <span className="text-7xl font-bold">OUR VALUE</span>
+          </li>
+          <li className="text-2xl mt-10 line leading-9">
+            <span className="text-amber-800 font-bold">
+              민경 X 리움랩스의 완벽 시너지:
+            </span>
+            <br />
+            {`${'"'}깊이 있는 제조${'"'}와 ${'"'}폭넓은 유통${'"'} 으로 고객에게 최고의 품질과 가치를
+            선사합니다.`}
+            <br />
+          </li>
+        </ul>
+        <div className="relative w-[85%] aspect-[4/1] mx-auto my-20">
           <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+            fill
+            className="object-contain"
+            alt=""
+            src={`/images/story_img.png`}
           />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        </div>
+      </div>
+      <div className="relative">
+        <Image src={`/images/story_bg.jpg`} alt={'story_bg'} fill />
+      </div>
+      <div className="relative w-full aspect-[1/1]">
+        <Image
+          src={`/images/mk_bg.jpg`}
+          alt={'story_bg'}
+          fill
+          className="object-contain"
+        />
+      </div>
     </div>
-  );
+  )
 }
