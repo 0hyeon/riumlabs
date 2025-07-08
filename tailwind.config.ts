@@ -12,6 +12,10 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        title: ["Paperlogy-8ExtraBold", "sans-serif"],
+        body: ["Pretendard-Regular", "sans-serif"],
+      },
     },
   },
   plugins: [],

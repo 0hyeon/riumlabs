@@ -1,37 +1,50 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Greenbricks
 
-## Getting Started
+## 🙌 Branch Naming Convention
 
-First, run the development server:
+| 이름 | 규칙 | 설명 | 분기점 | 병합점 |
+|---|---|---|---|---|
+| main | `main` | 배포 가능한 최종 상태의 브랜치 | - | develop |
+| develop | `develop` | 기능 개발을 위한 분기 및 병합 지점으로 사용하는 브랜치 | main | feat |
+| hotfix | `hotfix/v<hotfix-version>` | 서비스 중 긴급 수정 건에 대한 처리 | main | main, develop |
+| feat | `feat/<feature-name>` | 기능 개발 브랜치 | develop | develop |
+| refactor | `refactor/<feature-name>` | 리팩토링 브랜치 | develop | develop |
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+<details>
+<summary>예시</summary>
+<div markdown="1">
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- <이름>/<기능설명>-#<이슈번호> 의 형식으로 작성
+- 브랜치명은 kebab-case를 따름
+- 예) feat/create-login-#3
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+</div>
+</details>
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🙌 Commit Message Convention
 
-## Learn More
+| 머릿말           | 설명                                                     |
+| ---------------- | ------------------------------------------------------|
+| feat             | 새로운 기능 추가                                          |
+| fix              | 버그 수정                                               |
+| design           | UI 디자인 변경                                           |
+| !BREAKING CHANGE | 커다란 API 변경                                          |
+| !HOTFIX          | 코드 포맷 변경, 세미 콜론 누락, 코드 수정이 없는 경우             |
+| refactor         | 프로덕션 코드 리팩토링(기능은 그대로 유지)                      |
+| comment          | 주석 추가 및 변경                                         |
+| docs             | 문서 수정                                               |
+| test             | 테스트 추가, 테스트 리팩토링(기능은 그대로 유지)                 |
+| setting          | 패키지 설치, 개발 설정                                     |
+| chore            | 빌드 테스트 업데이트, 패키지 매니저를 설정하는 경우(기능은 그대로 유지)|
+| rename           | 파일 혹은 폴더명을 수정(기능은 그대로 유지)                     |
+| remove           | 파일 삭제(기능은 그대로 유지)                                |
 
-To learn more about Next.js, take a look at the following resources:
+<details>
+<summary>예시</summary>
+<div markdown="1">
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- 양식: <머릿말>: <제목> - #<이슈번호> 의 형식으로 작성
+- 예시: feat: 로그인 기능 추가 - #3
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# riumlabs
+</div>
+</details>
