@@ -451,7 +451,7 @@ export default function Home() {
             />
 
             <div className="absolute top-[30%] left-1/2 -translate-x-1/2 text-white text-center -translate-y-1/2 leading-tight">
-              <p className="text-[clamp(1rem,2.2vw,4rem)] whitespace-nowrap font-semibold">
+              <p className="text-[clamp(1rem,2.2vw,4rem)] whitespace-nowrap font-semibold font-body">
                 “원료부터 기술까지, 국내 생산의 완벽함”_민경
                 <br />
                 <span className="text-[#F5EEDB]">100% Made in Korea</span>
@@ -511,7 +511,7 @@ export default function Home() {
             />
 
             <div className="absolute top-[18.5%] left-1/2 -translate-x-1/2 text-white text-center -translate-y-1/2 leading-tight">
-              <p className="text-[4.5vw] md:text-xl whitespace-nowrap font-semibold w-full">
+              <p className="text-[4.5vw] md:text-xl whitespace-nowrap font-semibold w-full font-body">
                 “원료부터 기술까지, 국내 생산의 완벽함”_민경
                 <br />
                 <span className="text-[#F5EEDB]">100% Made in Korea</span>

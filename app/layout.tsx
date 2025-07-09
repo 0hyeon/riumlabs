@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -37,6 +36,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <meta
+        name="naver-site-verification"
+        content="1f9da3dca289b3d521eb13da1ae1fa4304c61080"
+      />
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
