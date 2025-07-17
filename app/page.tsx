@@ -845,8 +845,9 @@ export default function Home() {
                     className="flex justify-center items-center w-full md:w-64 bg-[#913010] hover:bg-amber-700 transition-colors p-2"
                   >
                     <div className="text-center">
-                      <strong className=" text-2xl text-white font-title">
-                        E-mail 문의
+                      <strong className="flex flex-col text-2xl text-white font-title">
+                        <div>E-mail 문의</div>
+                        <div className="text-base">riumlabs@naver.com</div>
                       </strong>
                     </div>
                   </a>
@@ -857,8 +858,9 @@ export default function Home() {
                     className="flex w-full justify-center items-center  md:w-64 bg-[#913010] hover:bg-amber-700 transition-colors p-2"
                   >
                     <div className="text-center">
-                      <strong className="flex text-2xl text-white font-title">
-                        전화 문의
+                      <strong className="flex flex-col text-2xl text-white font-title">
+                        <div>전화 문의</div>
+                        <div className="text-base">010-9250-0990</div>
                       </strong>
                     </div>
                   </a>
@@ -942,7 +944,7 @@ export default function Home() {
               경기도 광주시 초월읍 산수로 622번길 34 <br />
               사업자 등록번호 : 852-87-03409 /  법인 등록번호 : 134211-0030980{" "}
               <br />
-              대표이사 : 조성현 Copyright ⓒ RIIM LABS Co., Ltd. All Rights
+              대표이사 : 조성현 Copyright ⓒ RIUM LABS Co., Ltd. All Rights
               Reserved.
             </p>
           </div>
@@ -968,7 +970,7 @@ export default function Home() {
             경기도 광주시 초월읍 산수로 622번길 34 <br />
             사업자 등록번호 : 852-87-03409 /  법인 등록번호 : 134211-0030980{" "}
             <br />
-            대표이사 : 조성현 Copyright ⓒ RIIM LABS Co., Ltd. All Rights
+            대표이사 : 조성현 Copyright ⓒ RIUM LABS Co., Ltd. All Rights
             Reserved.
           </p>
         </div>
